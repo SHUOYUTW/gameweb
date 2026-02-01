@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>會員管理</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header><h1>會員管理 (總計: {{ user_count }} 人)</h1></header>
+    <div class="content-box">
+        <table style="width:100%">
+            <thead><tr><th>會員名稱</th><th>權限</th><th>操作</th></tr></thead>
+            <tbody>
+                {% for user in users %}
+                <tr>
+                    <td>{{ user.username }}</td>
+                    <td>{{ '管理員' if user.is_admin else '一般會員' }}</td>
+                    <td><a href="/admin/user/{{ user.username }}/orders">查看歷史訂單</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <br><a href="/admin">返回管理主頁</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ username }} 的歷史訂單</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header><h1>{{ username }} 的歷史已完成訂單</h1></header>
+    <div class="content-box">
+        {% for o in orders if o.status == '已完成' %}
+            <div style="border: 1px solid #ddd; margin-bottom: 10px; padding: 10px; text-align: left;">
+                <p>訂單編號: {{ o.order_id }} | 完成日期: {{ o.completed_at }}</p>
+                <ul>
+                    {% for item in o.items_list %}<li>{{ item.game }} - {{ item.item }}</li>{% endfor %}
+                </ul>
+            </div>
+        {% else %}
+            <p>目前尚無已完成的訂單。</p>
+        {% endfor %}
+        <br><a href="/admin/users">返回會員管理</a>
+    </div>
+</body>
+</html>

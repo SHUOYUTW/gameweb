@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>關於我們 - 姆斯商店</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>姆斯商店</h1>
+        <nav>
+            <a href="/">首頁</a>
+            <a href="/activity">優惠活動</a>
+            <a href="/about" style="color: #023b1a">關於我們</a>
+            <a href="/cart" style="color: #e67e22;">🛒 購物車 ({{ session.cart|length if session.cart else 0 }})</a>
+            <a href="/logout">登出 ({{ current_user.username }})</a>
+        </nav>
+    </header>
+
+    <div class="about-container">
+        <div class="breadcrumb">
+            <a href="/">首頁</a> ❯ 代儲免責聲明
+        </div>
+
+        <div class="section-title">本網站免責聲明</div>
+        <div class="notice-box">
+            <p>1. 本工作室使用正規禮品卡儲值。</p>
+            <p>2. 如需儲值收據需提前告知。</p>
+            <p>3. 代儲商品一經售出，概不接受退貨。</p>
+            <p>4. 未成年人下單行為需由其監護人自行承擔。</p>
+            <p>5. 儲值作業期間請勿登入遊戲，以免造成儲值失敗。</p>
+            <p>6. 因填寫表單資訊錯誤（如帳號、密碼、伺服器）導致的損失由顧客自行承擔。</p>
+            <p>7. 若因官方懲處導致封號等風險，需由顧客自行承擔。</p>
+            <p>8. 若因遊戲系統問題導致未到帳，本網站僅提供儲值明細供客戶自行向官方申訴。</p>
+        </div>
+
+        <div class="section-title">本網站聲明補充</div>
+        <div class="content-text">
+            <p>本網站所提供之內容僅係單純提供消費者代收轉付之資訊交流服務平台。代儲服務完成後，強烈建議客戶自行變更密碼，以保障帳號安全。</p>
+        </div>
+
+        <div style="margin-top: 40px; border-top: 1px solid #eee; padding-top: 20px; color: #888; font-size: 0.9rem;">
+            <p>如有任何疑問，請聯繫客服人員：</p>
+            <p>IG: MUSMUS_777 | LINE: @musmus</p>
+        </div>
+    </div>
+</body>
+</html>

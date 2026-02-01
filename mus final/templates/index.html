@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>姆斯商店</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>姆斯商店</h1>
+        <nav>
+            <a href="/">首頁</a>
+            <a href="/activity">優惠活動</a>
+            <a href="/about">關於我們</a>
+
+            {% if current_user.is_authenticated %}
+                {% if current_user.is_admin %}
+                    <a href="/admin">🛠️ 管理後台</a>
+                {% endif %}
+
+                <a href="/cart" style="color: #e67e22;">🛒 購物車 ({{ session.cart|length if session.cart else 0 }})</a>
+                <a href="/logout">登出 ({{ current_user.username }})</a>
+            {% else %}
+                <a href="/login">會員登入</a>
+                <a href="/register">註冊帳號</a>
+            {% endif %}
+        </nav>
+    </header>
+
+    <div class="grid">
+        {% for game in games %}
+        <a href="/price/{{ loop.index0 }}" class="game-card">
+            {% if game.image %}
+            <img src="{{ url_for('static', filename='images/' + game.image) }}" alt="{{ game.game }}" class="game-icon">
+            {% else %}
+            <div class="no-image">暫無圖片</div>
+            {% endif %}
+            <h3>{{ game.game }}</h3>
+            <p>{{ game.currency }}</p>
+        </a>
+        {% endfor %}
+    </div>
+</body>
+</html>

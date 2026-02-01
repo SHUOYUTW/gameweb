@@ -1,0 +1,1446 @@
+﻿{
+    "games": [
+        {
+            "game": "傳說對決",
+            "currency": "點券",
+            "image": "Garena-傳說對決.webp",
+            "prices": [
+                {
+                    "amount": 72,
+                    "priceNTD": 50
+                },
+                {
+                    "amount": 145,
+                    "priceNTD": 100
+                },
+                {
+                    "amount": 364,
+                    "priceNTD": 250
+                },
+                {
+                    "amount": 728,
+                    "priceNTD": 490
+                },
+                {
+                    "amount": 1237,
+                    "priceNTD": 825
+                },
+                {
+                    "amount": 1466,
+                    "priceNTD": 970
+                },
+                {
+                    "amount": 2194,
+                    "priceNTD": 1450
+                },
+                {
+                    "amount": 3692,
+                    "priceNTD": 2450
+                },
+                {
+                    "amount": 4110,
+                    "priceNTD": 2700
+                }
+            ]
+        },
+        {
+            "game": "決勝時刻",
+            "currency": "CP",
+            "image": "Garena決勝時刻.webp",
+            "prices": [
+                {
+                    "amount": 80,
+                    "priceNTD": 30
+                },
+                {
+                    "amount": 420,
+                    "priceNTD": 150
+                },
+                {
+                    "amount": 880,
+                    "priceNTD": 280
+                },
+                {
+                    "amount": 2400,
+                    "priceNTD": 700
+                },
+                {
+                    "amount": 5000,
+                    "priceNTD": 1350
+                },
+                {
+                    "amount": 10800,
+                    "priceNTD": 2750
+                },
+                {
+                    "item": "傳奇槍全盤13200CP",
+                    "priceNTD": 3450
+                },
+                {
+                    "item": "神話槍全盤14960CP",
+                    "priceNTD": 4050
+                },
+                {
+                    "item": "神話角全盤18200CP",
+                    "priceNTD": 4800
+                }
+            ],
+            "note": "不是代抽，是給顧客自己抽"
+        },
+        {
+            "game": "三角洲行動",
+            "currency": "三角幣",
+            "image": "unnamed.png",
+            "prices": [
+                {
+                    "amount": 60,
+                    "priceNTD": 30
+                },
+                {
+                    "amount": 320,
+                    "priceNTD": 150
+                },
+                {
+                    "amount": 750,
+                    "priceNTD": 280
+                },
+                {
+                    "amount": 1480,
+                    "priceNTD": 550
+                },
+                {
+                    "amount": 3950,
+                    "priceNTD": 1300
+                },
+                {
+                    "amount": 8100,
+                    "priceNTD": 2500
+                }
+            ],
+            "note": "Apple ID登入需加50NT"
+        },
+        {
+            "game": "極速領域",
+            "currency": "鑽石",
+            "image": "Garena極速領域.webp",
+            "prices": [
+                {
+                    "amount": 56,
+                    "priceNTD": 30
+                },
+                {
+                    "amount": 112,
+                    "priceNTD": 60
+                },
+                {
+                    "amount": 282,
+                    "priceNTD": 150
+                },
+                {
+                    "amount": 579,
+                    "priceNTD": 260
+                },
+                {
+                    "amount": 1230,
+                    "priceNTD": 460
+                },
+                {
+                    "amount": 1845,
+                    "priceNTD": 700
+                },
+                {
+                    "amount": 3134,
+                    "priceNTD": 1150
+                },
+                {
+                    "amount": 6279,
+                    "priceNTD": 2150
+                }
+            ],
+            "note": "UID儲值無需登入帳號"
+        },
+        {
+            "game": "Free Fire",
+            "currency": "鑽石/卡",
+            "image": "unnamed (1).png",
+            "prices": [
+                {
+                    "amount": 170,
+                    "priceNTD": 50
+                },
+                {
+                    "amount": 350,
+                    "priceNTD": 100
+                },
+                {
+                    "amount": 520,
+                    "priceNTD": 150
+                },
+                {
+                    "amount": 1060,
+                    "priceNTD": 280
+                },
+                {
+                    "amount": 2180,
+                    "priceNTD": 550
+                },
+                {
+                    "amount": 5600,
+                    "priceNTD": 1350
+                },
+                {
+                    "item": "小資周卡",
+                    "priceNTD": 30
+                },
+                {
+                    "item": "周卡",
+                    "priceNTD": 60
+                },
+                {
+                    "item": "超值月卡",
+                    "priceNTD": 260
+                }
+            ]
+        },
+        {
+            "game": "原神",
+            "currency": "創世結晶/禮包",
+            "image": "原神.webp",
+            "prices": [
+                {
+                    "amount": 60,
+                    "priceNTD": 30
+                },
+                {
+                    "amount": 300,
+                    "priceNTD": 150
+                },
+                {
+                    "amount": 980,
+                    "priceNTD": 420
+                },
+                {
+                    "amount": 1980,
+                    "priceNTD": 830
+                },
+                {
+                    "amount": 3280,
+                    "priceNTD": 1300
+                },
+                {
+                    "amount": 6480,
+                    "priceNTD": 2400
+                },
+                {
+                    "item": "空月祝福",
+                    "priceNTD": 150
+                },
+                {
+                    "item": "珍珠紀行",
+                    "priceNTD": 270
+                },
+                {
+                    "item": "珍珠之歌",
+                    "priceNTD": 550
+                },
+                {
+                    "item": "創世結晶一條龍",
+                    "priceNTD": 4800
+                }
+            ],
+            "note": "須登入儲值"
+        },
+        {
+            "game": "崩壞 : 星穹鐵道",
+            "currency": "古老夢華/禮包",
+            "image": "崩壞：星穹鐵道.jpg",
+            "prices": [
+                {
+                    "amount": 60,
+                    "priceNTD": 30
+                },
+                {
+                    "amount": 300,
+                    "priceNTD": 150
+                },
+                {
+                    "amount": 980,
+                    "priceNTD": 400
+                },
+                {
+                    "amount": 1980,
+                    "priceNTD": 800
+                },
+                {
+                    "amount": 3280,
+                    "priceNTD": 1200
+                },
+                {
+                    "amount": 6480,
+                    "priceNTD": 2350
+                },
+                {
+                    "item": "列車補給憑證",
+                    "priceNTD": 150
+                },
+                {
+                    "item": "無名客的榮勳",
+                    "priceNTD": 270
+                },
+                {
+                    "item": "無名客的獎章",
+                    "priceNTD": 550
+                },
+                {
+                    "item": "古老夢華一條龍",
+                    "priceNTD": 4700
+                }
+            ],
+            "note": "須登入儲值"
+        },
+        {
+            "game": "鳴潮",
+            "currency": "鑽石/卡",
+            "image": "鳴潮.jpg",
+            "prices": [
+                {
+                    "amount": 60,
+                    "priceNTD": 30
+                },
+                {
+                    "amount": 300,
+                    "priceNTD": 150
+                },
+                {
+                    "amount": 980,
+                    "priceNTD": 400
+                },
+                {
+                    "amount": 1980,
+                    "priceNTD": 850
+                },
+                {
+                    "amount": 3280,
+                    "priceNTD": 1300
+                },
+                {
+                    "amount": 6480,
+                    "priceNTD": 2500
+                },
+                {
+                    "item": "觀測卡",
+                    "priceNTD": 150
+                },
+                {
+                    "item": "寰宇頻道",
+                    "priceNTD": 270
+                },
+                {
+                    "item": "寰宇特約",
+                    "priceNTD": 550
+                },
+                {
+                    "item": "一條龍",
+                    "priceNTD": 4900
+                }
+            ]
+        },
+        {
+            "game": "荒野亂鬥",
+            "currency": "寶石/通行證",
+            "image": "Brawl-Stars-1.jpg",
+            "prices": [
+                {
+                    "amount": 30,
+                    "priceNTD": 60
+                },
+                {
+                    "amount": 80,
+                    "priceNTD": 150
+                },
+                {
+                    "amount": 170,
+                    "priceNTD": 280
+                },
+                {
+                    "amount": 360,
+                    "priceNTD": 550
+                },
+                {
+                    "amount": 950,
+                    "priceNTD": 1300
+                },
+                {
+                    "amount": 2000,
+                    "priceNTD": 2450
+                },
+                {
+                    "item": "高級荒野亂鬥通行證",
+                    "priceNTD": 280
+                }
+            ]
+        },
+        {
+            "game": "Roblox",
+            "currency": "RB/會員",
+            "image": "機器磚塊Roblox-儲值.webp",
+            "prices": [
+                {
+                    "amount": 400,
+                    "priceNTD": 150
+                },
+                {
+                    "amount": 800,
+                    "priceNTD": 280
+                },
+                {
+                    "amount": 1700,
+                    "priceNTD": 550
+                },
+                {
+                    "amount": 4500,
+                    "priceNTD": 1300
+                },
+                {
+                    "amount": 10000,
+                    "priceNTD": 2450
+                },
+                {
+                    "amount": 22500,
+                    "priceNTD": 4850
+                },
+                {
+                    "item": "450會員",
+                    "priceNTD": 150
+                },
+                {
+                    "item": "1000會員",
+                    "priceNTD": 280
+                },
+                {
+                    "item": "2200會員",
+                    "priceNTD": 550
+                }
+            ]
+        },
+        {
+            "game": "第五人格",
+            "currency": "迴聲",
+            "image": "unnamed.webp",
+            "prices": [
+                {
+                    "amount": 66,
+                    "priceNTD": 30
+                },
+                {
+                    "amount": 194,
+                    "priceNTD": 90
+                },
+                {
+                    "amount": 335,
+                    "priceNTD": 150
+                },
+                {
+                    "amount": 759,
+                    "priceNTD": 280
+                },
+                {
+                    "amount": 1518,
+                    "priceNTD": 550
+                },
+                {
+                    "amount": 2277,
+                    "priceNTD": 850
+                },
+                {
+                    "amount": 3795,
+                    "priceNTD": 1400
+                },
+                {
+                    "amount": 7590,
+                    "priceNTD": 2700
+                }
+            ]
+        },
+        {
+            "game": "蛋仔派對",
+            "currency": "蛋幣/禮包",
+            "image": "file_68_5.jpg",
+            "prices": [
+                {
+                    "amount": 10,
+                    "priceNTD": 10
+                },
+                {
+                    "amount": 63,
+                    "priceNTD": 30
+                },
+                {
+                    "amount": 126,
+                    "priceNTD": 50
+                },
+                {
+                    "amount": 324,
+                    "priceNTD": 150
+                },
+                {
+                    "amount": 757,
+                    "priceNTD": 280
+                },
+                {
+                    "amount": 1524,
+                    "priceNTD": 550
+                },
+                {
+                    "amount": 2296,
+                    "priceNTD": 750
+                },
+                {
+                    "amount": 3873,
+                    "priceNTD": 1250
+                },
+                {
+                    "amount": 7783,
+                    "priceNTD": 2400
+                },
+                {
+                    "amount": 9307,
+                    "priceNTD": 2850
+                },
+                {
+                    "item": "每周蛋幣包",
+                    "priceNTD": 30
+                },
+                {
+                    "item": "悠悠會員",
+                    "priceNTD": 60
+                },
+                {
+                    "item": "閃亮的硬幣罐",
+                    "priceNTD": 80
+                }
+            ],
+            "note": "UID儲值不登入遊戲"
+        },
+        {
+            "game": "光遇",
+            "currency": "蠟燭/禮包",
+            "image": "images.jpg",
+            "prices": [
+                {
+                    "amount": 15,
+                    "priceNTD": 150
+                },
+                {
+                    "amount": 35,
+                    "priceNTD": 280
+                },
+                {
+                    "amount": 72,
+                    "priceNTD": 550
+                },
+                {
+                    "amount": 190,
+                    "priceNTD": 1300
+                },
+                {
+                    "item": "超值禮包",
+                    "priceNTD": 150
+                },
+                {
+                    "item": "單人季票",
+                    "priceNTD": 280
+                },
+                {
+                    "item": "三人季票",
+                    "priceNTD": 550
+                },
+                {
+                    "item": "33台幣禮包",
+                    "priceNTD": 30
+                },
+                {
+                    "item": "70台幣禮包",
+                    "priceNTD": 55
+                },
+                {
+                    "item": "100台幣禮包",
+                    "priceNTD": 90
+                },
+                {
+                    "item": "170台幣禮包",
+                    "priceNTD": 150
+                },
+                {
+                    "item": "190台幣禮包",
+                    "priceNTD": 160
+                },
+                {
+                    "item": "230台幣禮包",
+                    "priceNTD": 190
+                },
+                {
+                    "item": "330台幣禮包",
+                    "priceNTD": 280
+                },
+                {
+                    "item": "390台幣禮包",
+                    "priceNTD": 330
+                },
+                {
+                    "item": "490台幣禮包",
+                    "priceNTD": 420
+                },
+                {
+                    "item": "590台幣禮包",
+                    "priceNTD": 500
+                },
+                {
+                    "item": "670台幣禮包",
+                    "priceNTD": 550
+                },
+                {
+                    "item": "690台幣禮包",
+                    "priceNTD": 570
+                },
+                {
+                    "item": "790台幣禮包",
+                    "priceNTD": 680
+                },
+                {
+                    "item": "830台幣禮包",
+                    "priceNTD": 700
+                },
+                {
+                    "item": "990台幣禮包",
+                    "priceNTD": 850
+                },
+                {
+                    "item": "1690台幣禮包",
+                    "priceNTD": 1300
+                }
+            ],
+            "note": "正規渠道須登入儲值"
+        },
+        {
+            "game": "PUBG M台服",
+            "currency": "UC",
+            "image": "絕地求生M.webp",
+            "prices": [
+                {
+                    "amount": 63,
+                    "priceNTD": 30,
+                    "type": "UID儲值"
+                },
+                {
+                    "amount": 191,
+                    "priceNTD": 90,
+                    "type": "UID儲值"
+                },
+                {
+                    "amount": 700,
+                    "priceNTD": 300,
+                    "type": "UID儲值"
+                },
+                {
+                    "amount": 1875,
+                    "priceNTD": 700,
+                    "type": "UID儲值"
+                },
+                {
+                    "amount": 3990,
+                    "priceNTD": 1400,
+                    "type": "UID儲值"
+                },
+                {
+                    "amount": 8400,
+                    "priceNTD": 2800,
+                    "type": "UID儲值"
+                },
+                {
+                    "amount": 60,
+                    "priceNTD": 30,
+                    "type": "登入儲值"
+                },
+                {
+                    "amount": 325,
+                    "priceNTD": 150,
+                    "type": "登入儲值"
+                },
+                {
+                    "amount": 660,
+                    "priceNTD": 280,
+                    "type": "登入儲值"
+                },
+                {
+                    "amount": 1800,
+                    "priceNTD": 700,
+                    "type": "登入儲值"
+                },
+                {
+                    "amount": 3850,
+                    "priceNTD": 1300,
+                    "type": "登入儲值"
+                },
+                {
+                    "amount": 8100,
+                    "priceNTD": 2450,
+                    "type": "登入儲值"
+                }
+            ]
+        },
+        {
+            "game": "Pokémon go",
+            "currency": "寶可幣",
+            "image": "unnamed.jpg",
+            "prices": [
+                {
+                    "amount": 100,
+                    "priceNTD": 15
+                },
+                {
+                    "amount": 600,
+                    "priceNTD": 110
+                },
+                {
+                    "amount": 1200,
+                    "priceNTD": 150
+                },
+                {
+                    "amount": 2500,
+                    "priceNTD": 320
+                },
+                {
+                    "amount": 5600,
+                    "priceNTD": 530
+                },
+                {
+                    "amount": 15000,
+                    "priceNTD": 1150
+                },
+                {
+                    "amount": 31000,
+                    "priceNTD": 2250
+                },
+                {
+                    "amount": 46500,
+                    "priceNTD": 3200
+                }
+            ]
+        },
+        {
+            "game": "Weplay",
+            "currency": "金幣/紅包",
+            "image": "weplay.png",
+            "prices": [
+                {
+                    "amount": 600,
+                    "priceNTD": 30
+                },
+                {
+                    "amount": 1800,
+                    "priceNTD": 90
+                },
+                {
+                    "amount": 3000,
+                    "priceNTD": 150
+                },
+                {
+                    "amount": 10000,
+                    "priceNTD": 380
+                },
+                {
+                    "amount": 50000,
+                    "priceNTD": 1750
+                },
+                {
+                    "item": "600紅包",
+                    "priceNTD": 30
+                },
+                {
+                    "item": "1800紅包",
+                    "priceNTD": 90
+                },
+                {
+                    "item": "3000紅包",
+                    "priceNTD": 150
+                },
+                {
+                    "item": "10000紅包",
+                    "priceNTD": 380
+                },
+                {
+                    "item": "50000紅包",
+                    "priceNTD": 1750
+                }
+            ],
+            "note": "若儲值後未到帳，我方僅提供儲值明細"
+        },
+        {
+            "game": "抖音Tok 國際版",
+            "currency": "金幣",
+            "image": "抖音.png",
+            "prices": [
+                {
+                    "amount": 350,
+                    "priceNTD": 150
+                },
+                {
+                    "amount": 700,
+                    "priceNTD": 300
+                },
+                {
+                    "amount": 1400,
+                    "priceNTD": 580
+                },
+                {
+                    "amount": 3500,
+                    "priceNTD": 1280
+                },
+                {
+                    "amount": 7000,
+                    "priceNTD": 2600
+                }
+            ]
+        },
+        {
+            "game": "抖音 陸版",
+            "currency": "鑽石",
+            "image": "抖音.png",
+            "prices": [
+                {
+                    "amount": 1000,
+                    "priceNTD": 580
+                },
+                {
+                    "amount": 2000,
+                    "priceNTD": 1150
+                },
+                {
+                    "amount": 3000,
+                    "priceNTD": 1600
+                },
+                {
+                    "amount": 5000,
+                    "priceNTD": 2650
+                },
+                {
+                    "amount": 10000,
+                    "priceNTD": 5200
+                },
+                {
+                    "amount": 20000,
+                    "priceNTD": 10200
+                },
+                {
+                    "amount": 30000,
+                    "priceNTD": 15200
+                },
+                {
+                    "amount": 50000,
+                    "priceNTD": 25300
+                }
+            ],
+            "note": "UID儲值無需登入帳號"
+        },
+        {
+            "game": "天天玩樂園",
+            "currency": "禮包",
+            "image": "天天玩樂園.jpg",
+            "prices": [
+                {
+                    "item": "33台幣禮包",
+                    "priceNTD": 30
+                },
+                {
+                    "item": "70台幣禮包",
+                    "priceNTD": 60
+                },
+                {
+                    "item": "100台幣禮包",
+                    "priceNTD": 90
+                },
+                {
+                    "item": "130台幣禮包",
+                    "priceNTD": 120
+                },
+                {
+                    "item": "170台幣禮包",
+                    "priceNTD": 150
+                },
+                {
+                    "item": "190台幣禮包",
+                    "priceNTD": 170
+                },
+                {
+                    "item": "230台幣禮包",
+                    "priceNTD": 190
+                },
+                {
+                    "item": "270台幣禮包",
+                    "priceNTD": 230
+                },
+                {
+                    "item": "330台幣禮包",
+                    "priceNTD": 280
+                },
+                {
+                    "item": "390台幣禮包",
+                    "priceNTD": 330
+                },
+                {
+                    "item": "430台幣禮包",
+                    "priceNTD": 360
+                },
+                {
+                    "item": "470台幣禮包",
+                    "priceNTD": 390
+                },
+                {
+                    "item": "490台幣禮包",
+                    "priceNTD": 400
+                },
+                {
+                    "item": "670台幣禮包",
+                    "priceNTD": 550
+                },
+                {
+                    "item": "1690台幣禮包",
+                    "priceNTD": 1350
+                },
+                {
+                    "item": "3290台幣禮包",
+                    "priceNTD": 2550
+                }
+            ],
+            "note": "限IOS系統"
+        },
+        {
+            "game": "荒野行動",
+            "currency": "點券",
+            "image": "荒野行動.webp",
+            "prices": [
+                {
+                    "amount": 60,
+                    "priceNTD": 30
+                },
+                {
+                    "amount": 180,
+                    "priceNTD": 90
+                },
+                {
+                    "amount": 300,
+                    "priceNTD": 150
+                },
+                {
+                    "amount": 680,
+                    "priceNTD": 280
+                },
+                {
+                    "amount": 1280,
+                    "priceNTD": 580
+                },
+                {
+                    "amount": 1980,
+                    "priceNTD": 850
+                },
+                {
+                    "amount": 3280,
+                    "priceNTD": 1400
+                },
+                {
+                    "amount": 6480,
+                    "priceNTD": 2750
+                }
+            ],
+            "note": "限定IOS系統登入儲值"
+        },
+        {
+            "game": "神魔之塔",
+            "currency": "魔法石/禮包",
+            "image": "神魔之塔.png",
+            "prices": [
+                {
+                    "amount": 1,
+                    "priceNTD": 30
+                },
+                {
+                    "amount": 6,
+                    "priceNTD": 140
+                },
+                {
+                    "amount": 15,
+                    "priceNTD": 300
+                },
+                {
+                    "amount": 30,
+                    "priceNTD": 580
+                },
+                {
+                    "amount": 60,
+                    "priceNTD": 980
+                },
+                {
+                    "amount": 90,
+                    "priceNTD": 1300
+                },
+                {
+                    "amount": 150,
+                    "priceNTD": 1950
+                },
+                {
+                    "amount": 180,
+                    "priceNTD": 2450
+                },
+                {
+                    "item": "30台幣禮包",
+                    "priceNTD": 30
+                },
+                {
+                    "item": "150台幣禮包",
+                    "priceNTD": 140
+                },
+                {
+                    "item": "270台幣禮包",
+                    "priceNTD": 240
+                },
+                {
+                    "item": "360台幣禮包",
+                    "priceNTD": 300
+                },
+                {
+                    "item": "630台幣禮包",
+                    "priceNTD": 580
+                },
+                {
+                    "item": "1170台幣禮包",
+                    "priceNTD": 980
+                },
+                {
+                    "item": "1590台幣禮包",
+                    "priceNTD": 1300
+                },
+                {
+                    "item": "2490台幣禮包",
+                    "priceNTD": 1950
+                }
+            ]
+        },
+        {
+            "game": "雀魂麻將",
+            "currency": "輝玉",
+            "image": "雀魂麻將.png",
+            "prices": [
+                {
+                    "amount": 65,
+                    "priceNTD": 30
+                },
+                {
+                    "amount": 340,
+                    "priceNTD": 160
+                },
+                {
+                    "amount": 660,
+                    "priceNTD": 300
+                },
+                {
+                    "amount": 1200,
+                    "priceNTD": 500
+                },
+                {
+                    "amount": 2100,
+                    "priceNTD": 850
+                },
+                {
+                    "amount": 2800,
+                    "priceNTD": 1150
+                },
+                {
+                    "amount": 3660,
+                    "priceNTD": 1400
+                },
+                {
+                    "amount": 6480,
+                    "priceNTD": 2650
+                }
+            ]
+        },
+        {
+            "game": "楓之谷Artale",
+            "currency": "金幣",
+            "image": "楓之谷Artale.jpg",
+            "prices": [
+                {
+                    "amount": 400,
+                    "priceNTD": 50
+                },
+                {
+                    "amount": 800,
+                    "priceNTD": 100
+                },
+                {
+                    "amount": 1600,
+                    "priceNTD": 250
+                },
+                {
+                    "amount": 3600,
+                    "priceNTD": 480
+                },
+                {
+                    "amount": 6400,
+                    "priceNTD": 800
+                },
+                {
+                    "amount": 13200,
+                    "priceNTD": 1450
+                }
+            ]
+        },
+        {
+            "game": "全民party",
+            "currency": "鑽石/金豆",
+            "image": "全民party.png",
+            "prices": [
+                {
+                    "amount": 60,
+                    "priceNTD": 30
+                },
+                {
+                    "amount": 180,
+                    "priceNTD": 90
+                },
+                {
+                    "amount": 300,
+                    "priceNTD": 150
+                },
+                {
+                    "amount": 620,
+                    "priceNTD": 300
+                },
+                {
+                    "amount": 1680,
+                    "priceNTD": 830
+                },
+                {
+                    "amount": 3280,
+                    "priceNTD": 1400
+                },
+                {
+                    "amount": 9980,
+                    "priceNTD": 3950
+                },
+                {
+                    "amount": 600,
+                    "priceNTD": 30
+                },
+                {
+                    "amount": 1900,
+                    "priceNTD": 90
+                },
+                {
+                    "amount": 3200,
+                    "priceNTD": 150
+                },
+                {
+                    "amount": 7500,
+                    "priceNTD": 300
+                },
+                {
+                    "amount": 20000,
+                    "priceNTD": 830
+                },
+                {
+                    "amount": 40000,
+                    "priceNTD": 1400
+                },
+                {
+                    "amount": 122000,
+                    "priceNTD": 3950
+                }
+            ]
+        },
+        {
+            "game": "明日之後",
+            "currency": "信用點",
+            "image": "明日之後.jpg",
+            "prices": [
+                {
+                    "amount": 60,
+                    "priceNTD": 30
+                },
+                {
+                    "amount": 300,
+                    "priceNTD": 140
+                },
+                {
+                    "amount": 500,
+                    "priceNTD": 220
+                },
+                {
+                    "amount": 980,
+                    "priceNTD": 400
+                },
+                {
+                    "amount": 1980,
+                    "priceNTD": 800
+                },
+                {
+                    "amount": 2980,
+                    "priceNTD": 1300
+                },
+                {
+                    "amount": 4880,
+                    "priceNTD": 1900
+                },
+                {
+                    "amount": 6480,
+                    "priceNTD": 2500
+                }
+            ],
+            "note": "IOS系統專用"
+        },
+        {
+            "game": "聯盟戰棋",
+            "currency": "戰棋幣",
+            "image": "聯盟戰棋.webp",
+            "prices": [
+                {
+                    "amount": 575,
+                    "priceNTD": 130
+                },
+                {
+                    "amount": 1380,
+                    "priceNTD": 280
+                },
+                {
+                    "amount": 2800,
+                    "priceNTD": 530
+                },
+                {
+                    "amount": 4500,
+                    "priceNTD": 850
+                },
+                {
+                    "amount": 6500,
+                    "priceNTD": 1200
+                },
+                {
+                    "amount": 13500,
+                    "priceNTD": 2350
+                }
+            ]
+        },
+        {
+            "game": "逆水寒",
+            "currency": "紋玉",
+            "image": "逆水寒.png",
+            "prices": [
+                {
+                    "amount": 60,
+                    "priceNTD": 30
+                },
+                {
+                    "amount": 300,
+                    "priceNTD": 150
+                },
+                {
+                    "amount": 980,
+                    "priceNTD": 440
+                },
+                {
+                    "amount": 3280,
+                    "priceNTD": 1350
+                },
+                {
+                    "amount": 6480,
+                    "priceNTD": 2700
+                },
+                {
+                    "item": "紋玉一條龍",
+                    "priceNTD": 5500
+                }
+            ]
+        },
+        {
+            "game": "楓之谷M",
+            "currency": "台幣禮包",
+            "image": "楓之谷M.jpg",
+            "prices": [
+                {
+                    "item": "30台幣禮包",
+                    "priceNTD": 30
+                },
+                {
+                    "item": "150台幣禮包",
+                    "priceNTD": 140
+                },
+                {
+                    "item": "190台幣禮包",
+                    "priceNTD": 170
+                },
+                {
+                    "item": "270台幣禮包",
+                    "priceNTD": 230
+                },
+                {
+                    "item": "290台幣禮包",
+                    "priceNTD": 250
+                },
+                {
+                    "item": "330台幣禮包",
+                    "priceNTD": 280
+                },
+                {
+                    "item": "390台幣禮包",
+                    "priceNTD": 360
+                },
+                {
+                    "item": "470台幣禮包",
+                    "priceNTD": 400
+                },
+                {
+                    "item": "590台幣禮包",
+                    "priceNTD": 500
+                },
+                {
+                    "item": "640台幣禮包",
+                    "priceNTD": 530
+                },
+                {
+                    "item": "690台幣禮包",
+                    "priceNTD": 550
+                },
+                {
+                    "item": "830台幣禮包",
+                    "priceNTD": 680
+                },
+                {
+                    "item": "960台幣禮包",
+                    "priceNTD": 800
+                },
+                {
+                    "item": "1020台幣禮包",
+                    "priceNTD": 820
+                },
+                {
+                    "item": "1290台幣禮包",
+                    "priceNTD": 1050
+                },
+                {
+                    "item": "1350台幣禮包",
+                    "priceNTD": 1100
+                },
+                {
+                    "item": "1590台幣禮包",
+                    "priceNTD": 1250
+                },
+                {
+                    "item": "1990台幣禮包",
+                    "priceNTD": 1600
+                },
+                {
+                    "item": "2590台幣禮包",
+                    "priceNTD": 2100
+                },
+                {
+                    "item": "2990台幣禮包",
+                    "priceNTD": 2400
+                },
+                {
+                    "item": "3190台幣禮包",
+                    "priceNTD": 2500
+                },
+                {
+                    "item": "4490台幣禮包",
+                    "priceNTD": 3600
+                },
+                {
+                    "item": "5790台幣禮包",
+                    "priceNTD": 4600
+                },
+                {
+                    "item": "6990台幣禮包",
+                    "priceNTD": 5600
+                }
+            ]
+        },
+        {
+            "game": "貓咪大戰爭",
+            "currency": "貓罐頭",
+            "image": "貓咪大戰爭.jpg",
+            "prices": [
+                {
+                    "amount": 30,
+                    "priceNTD": 30
+                },
+                {
+                    "amount": 100,
+                    "priceNTD": 80
+                },
+                {
+                    "amount": 180,
+                    "priceNTD": 150
+                },
+                {
+                    "amount": 330,
+                    "priceNTD": 250
+                },
+                {
+                    "amount": 690,
+                    "priceNTD": 500
+                },
+                {
+                    "amount": 1080,
+                    "priceNTD": 720
+                },
+                {
+                    "amount": 1860,
+                    "priceNTD": 880
+                },
+                {
+                    "amount": 3900,
+                    "priceNTD": 1750
+                },
+                {
+                    "amount": 5900,
+                    "priceNTD": 2650
+                }
+            ]
+        },
+        {
+            "game": "戀與深空",
+            "currency": "鑽石",
+            "image": "戀與深空.jpg",
+            "prices": [
+                {
+                    "amount": 60,
+                    "priceNTD": 30
+                },
+                {
+                    "amount": 300,
+                    "priceNTD": 140
+                },
+                {
+                    "amount": 450,
+                    "priceNTD": 200
+                },
+                {
+                    "amount": 980,
+                    "priceNTD": 430
+                },
+                {
+                    "amount": 1980,
+                    "priceNTD": 800
+                },
+                {
+                    "amount": 3280,
+                    "priceNTD": 1250
+                },
+                {
+                    "amount": 6480,
+                    "priceNTD": 2450
+                }
+            ]
+        }
+    ]
+}

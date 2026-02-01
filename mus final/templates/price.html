@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>價目表 - 姆斯商店</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1 id="game-title">載入中...</h1>
+        <nav>
+            <a href="/">首頁</a>
+            <a href="/cart">購物車({{ session.cart|length if session.cart else 0 }})</a>
+            {% if current_user.is_authenticated %}
+                <a href="/logout">登出</a>
+            {% else %}
+                <a href="/login">登入</a>
+            {% endif %}
+        </nav>
+    </header>
+    
+    <div id="loading-spinner" style="padding: 20px;">正在讀取最新價格...</div>
+    <p id="game-note" style="color: #e74c3c; font-weight: bold; padding: 0 20px; text-align: center;"></p>
+
+    <table id="price-table" style="display:none; width: 90%; margin: 20px auto;">
+        <thead>
+            <tr>
+                <th>內容</th>
+                <th>價格 (NTD)</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody id="price-list"></tbody>
+    </table>
+
+    <script>
+        const gameId = {{ game_id | tojson | safe }};
+        
+        function confirmAdd(itemName) {
+            alert("已成功將 「" + itemName + "」 加入購物車！");
+            return true; 
+        }
+        
+        async function loadGameData() {
+            if (gameId === null || gameId === undefined) {
+                document.getElementById('game-title').innerText = "參數錯誤";
+                return;
+            }
+
+            try {
+                const response = await fetch(`/api/game/${gameId}`);
+                const game = await response.json();
+                
+                document.getElementById('loading-spinner').style.display = 'none';
+                
+                if (game.error) {
+                    document.getElementById('game-title').innerText = "找不到該遊戲";
+                    return;
+                }
+
+                // --- 修正重點 1：路徑必須指向 /static/images/ ---
+                // --- 修正重點 2：變數名稱要對應 data.json 裡的 "image" ---
+                const imageUrl = `/static/images/${game.image}`;
+                const titleElement = document.getElementById('game-title');
+
+                titleElement.innerHTML = `
+                    <img src="${imageUrl}" alt="${game.game}">
+                    <span>${game.game}</span>
+                `;
+
+                if (game.note) document.getElementById('game-note').innerText = `備註：${game.note}`;
+
+                const tbody = document.getElementById('price-list');
+                tbody.innerHTML = game.prices.map(p => {
+                    let displayItem = p.item || p.amount;
+                    if (game.currency && !displayItem.toString().includes(game.currency)) {
+                        displayItem = `${displayItem} ${game.currency}`;
+                    }
+
+                    return `
+                        <tr>
+                            <td style="font-weight: bold; color: #2e7d32;">${displayItem}</td>
+                            <td>$${p.priceNTD}</td>
+                            <td>
+                                <form action="/add_to_cart" method="POST" onsubmit="return confirmAdd('${displayItem}')">
+                                    <input type="hidden" name="game_name" value="${game.game}">
+                                    <input type="hidden" name="item_name" value="${displayItem}">
+                                    <input type="hidden" name="price" value="${p.priceNTD}">
+                                    <button type="submit" class="buy-btn">加入購物車</button>
+                                </form>
+                            </td>
+                        </tr>
+                    `;
+                }).join('');
+                
+                document.getElementById('price-table').style.display = 'table';
+            } catch (error) {
+                console.error('AJAX Error:', error);
+            }
+        }
+        window.onload = loadGameData;
+    </script>
+</body>
+</html>

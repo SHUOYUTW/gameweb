@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>訂單完成 - 姆斯商店</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="content-box" style="border: 2px solid #2e7d32; padding: 30px; margin-top: 50px; background: #fff;">
+        <h2 style="color: #2e7d32;">✅ 訂單資訊已產生</h2>
+        <p style="font-size: 1.2rem;">請截圖此畫面，並提供<strong>訂單編號</strong>給客服付款</p>
+        
+        <div style="text-align: left; background: #f9f9f9; padding: 25px; border-radius: 10px; border: 1px solid #ddd; margin: 20px 0;">
+            <p style="font-size: 1.3rem; color: #d35400; margin-bottom: 5px;">
+                <strong>📌 訂單編號：{{ info.order_id }}</strong>
+            </p>
+            <p style="font-size: 1.1rem; color: #2e7d32;">
+                <strong>👤 會員帳號：{{ info.member_name }}</strong>
+            </p>
+            <hr>
+            
+            <p><strong>購買項目：</strong></p>
+            <ul>
+                {% for item in info.cart_list %}
+                    <li>{{ item.game }} - {{ item.item }} (NT$ {{ item.price }})</li>
+                {% endfor %}
+            </ul>
+            <h2 style="color: #e67e22; text-align: right;">應付總額：NT$ {{ "{:,.0f}".format(info.total) }}</h2>
+        </div>
+
+        <div style="margin-top: 30px;">
+            <a href="https://line.me/R/ti/p/@您的ID" target="_blank" class="buy-btn" style="display: block; text-decoration: none; padding: 20px; background-color: #06C755; font-size: 1.3rem;">
+                點我聯繫 LINE 客服並提供訂單編號
+            </a>
+        </div>
+        <p><a href="/" style="color: #999; text-decoration: none;">回到首頁</a></p>
+    </div>
+</body>
+</html>

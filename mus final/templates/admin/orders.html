@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>訂單管理系統 - 姆斯商店</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #f4f4f4; text-align: center; }
+        .status-badge { padding: 4px 8px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; }
+        .status-pending { background: #fff3cd; color: #856404; }
+        .status-paid { background: #d1ecf1; color: #0c5460; }
+        .status-completed { background: #d4edda; color: #155724; }
+        .btn-action { 
+            padding: 8px 12px; 
+            text-decoration: none; 
+            border-radius: 4px; 
+            font-size: 0.85rem; 
+            color: white; 
+            display: inline-block;
+            width: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>訂單管理系統</h1>
+        <nav>
+            <a href="/">回到商店首頁</a>
+            <a href="/admin">管理主頁</a>
+            <a href="/admin/users">會員管理</a>
+        </nav>
+    </header>
+
+    <div class="content-box" style="max-width: 1100px;">
+        <h2 style="color: #e67e22;">🔥 未完成訂單</h2>
+        {% if pending %}
+        <table>
+            <thead>
+                <tr>
+                    <th>日期/編號</th>
+                    <th>會員</th>
+                    <th>購買項目</th>
+                    <th>總金額</th>
+                    <th>當前狀態</th>
+                    <th>狀態操作</th> </tr>
+            </thead>
+            <tbody>
+                {% for o in pending %}
+                <tr>
+                    <td>{{ o.created_at.strftime('%Y-%m-%d %H:%M') }}<br><strong>{{ o.order_id }}</strong></td>
+                    <td>{{ o.username }}</td>
+                    <td>
+                        {% for item in o.items_list %}
+                            • {{ item.game }}: {{ item.item }}<br>
+                        {% endfor %}
+                    </td>
+                    <td>NT$ {{ "{:,.0f}".format(o.total_price) }}</td>
+                    <td style="text-align: center;">
+                        <span class="status-badge {% if o.status == '待付款' %}status-pending{% else %}status-paid{% endif %}">
+                            {{ o.status }}
+                        </span>
+                    </td>
+                    <td style="padding: 10px; vertical-align: middle; text-align: center; min-width: 140px;">
+                        <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                            {% if o.status == '待付款' %}
+                                <a href="/admin/update_order/{{ o.id }}/已付款" class="btn-action" style="background: #3498db;">設為已付款</a>
+                                <span class="btn-action" style="background: #bdc3c7; cursor: not-allowed; opacity: 0.6;">完成訂單</span>
+                            
+                            {% elif o.status == '已付款' %}
+                                <div style="height: 33px;"></div> <a href="/admin/update_order/{{ o.id }}/已完成" class="btn-action" style="background: #27ae60;" onclick="return confirm('確定將此訂單標記為已完成？')">完成訂單</a>
+                            {% endif %}
+                        </div>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p style="padding: 20px; color: #999;">目前沒有未完成訂單。</p>
+        {% endif %}
+
+        <h2 style="margin-top: 60px; color: #666;">✅ 近期 30 天內已完成</h2>
+        {% if completed %}
+        <table>
+            <thead>
+                <tr style="background: #f9f9f9;">
+                    <th>訂單編號</th>
+                    <th>會員</th>
+                    <th>總金額</th>
+                    <th>完成時間</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for o in completed %}
+                <tr style="color: #666;">
+                    <td>{{ o.order_id }}</td>
+                    <td>{{ o.username }}</td>
+                    <td>NT$ {{ "{:,.0f}".format(o.total_price) }}</td>
+                    <td>{{ o.completed_at.strftime('%Y-%m-%d %H:%M') }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p style="padding: 20px; color: #999;">最近 30 天內無完成紀錄。</p>
+        {% endif %}
+    </div>
+</body>
+</html>

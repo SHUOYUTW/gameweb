@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>填寫購買資訊 - 姆斯商店</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .form-group { text-align: left; margin-bottom: 15px; max-width: 400px; margin-left: auto; margin-right: auto; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: bold; color: #2e7d32; }
+        .form-group input, .form-group select { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box; }
+        .order-preview { background: #f1f8e9; padding: 15px; border-radius: 8px; margin-bottom: 25px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>填寫資料</h1>
+        <nav><a href="/cart">返回購物車</a></nav>
+    </header>
+
+    <div class="content-box">
+        <div class="order-preview">
+            <h3>🛒 購買項目確認</h3>
+            {% for item in items %}
+                <p>{{ item.game }} - {{ item.item }} (NT$ {{ item.price }})</p>
+            {% endfor %}
+            <h3 style="color: #e67e22;">應付總額：NT$ {{ "{:,.0f}".format(total) }}</h3>
+        </div>
+
+        <form method="POST">
+            <div class="form-group">
+                <label>登入方式</label>
+                <select name="login_type" required>
+                    <option value="">請選擇登入方式</option>
+                    <option value="Google">Google</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="官方帳號">遊戲官方帳號</option>
+                    <option value="其他">其他</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>遊戲帳號</label>
+                <input type="text" name="account" placeholder="請輸入 Email 或 手機號碼" required>
+            </div>
+            <div class="form-group">
+                <label>遊戲密碼</label>
+                <input type="password" name="password" placeholder="請輸入正確密碼" required>
+            </div>
+            
+            <div style="margin-top: 30px;">
+                <button type="submit" class="buy-btn" style="width: 100%; padding: 15px; font-size: 1.2rem;">提交資訊並下一步</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

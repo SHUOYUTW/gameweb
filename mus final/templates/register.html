@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>註冊 - 姆斯商店</title>
+</head>
+<body>
+    <div class="content-box">
+        <h1>註冊新帳號</h1>
+        <form method="POST">
+            <input type="text" name="username" placeholder="請輸入帳號" required><br><br>
+            <input type="password" name="password" placeholder="請輸入密碼" required><br><br>
+            <button type="submit" class="buy-btn">立即註冊</button>
+        </form>
+        <p><a href="/login">已有帳號？點此登入</a></p>
+    </div>
+</body>
+</html>

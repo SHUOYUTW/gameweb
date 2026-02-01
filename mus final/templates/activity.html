@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>優惠活動 - 姆斯商店</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        /* 專屬於活動頁的額外樣式 */
+        .activity-container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .activity-card {
+            background: white;
+            border-left: 8px solid #f39c12; /* 橘色主題色 */
+            margin-bottom: 20px;
+            padding: 20px;
+            text-align: left;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .activity-card h2 {
+            margin-top: 0;
+            color: #e67e22;
+        }
+        .badge {
+            background: #e74c3c;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            vertical-align: middle;
+        }
+        .date {
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>姆斯商店</h1>
+        <nav>
+            <a href="/">首頁</a>
+            <a href="/activity" style="color: #023b1a">優惠活動</a>
+            <a href="/about">關於我們</a>
+            <a href="/cart" style="color: #e67e22;">🛒 購物車 ({{ session.cart|length if session.cart else 0 }})</a>
+            <a href="/logout">登出 ({{ current_user.username }})</a>
+        </nav>
+    </header>
+
+    <main class="activity-container">
+        <div class="activity-card">
+            <h2><span class="badge">熱門</span> 傳說對決：死神聯動造型預購</h2>
+            <p class="date">活動時間：2024/12/01 - 2024/12/31</p>
+            <p><strong>活動內容：</strong> 預購死神系列聯動造型，享專屬回饋點券！</p>
+            <ul>
+                <li>預購單一造型贈送 100 點券</li>
+                <li>預購全套造型享 9 折優惠</li>
+            </ul>
+        </div>
+
+        <div class="activity-card" style="border-left-color: #3498db;">
+            <h2>決勝時刻：CP 儲值特惠週</h2>
+            <p class="date">活動時間：2024/12/20 - 2024/12/27</p>
+            <p><strong>活動內容：</strong> 指定期間內儲值《決勝時刻》10800 CP 面額，現折 NT$100。</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 姆斯商店 - 專業遊戲代儲</p>
+    </footer>
+</body>
+</html>
